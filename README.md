@@ -176,30 +176,16 @@ https://graphhopper.com/api/1/route?point=starting_latitude,starting_longitude&p
 
 ## Personas
 
-### Anna
-
-![](./personas/persona-anna.png)
-
-### Betsy
-
-![](./personas/persona-betsy.png)
-
-### Brittany
-
-![](./personas/persona-brittany.png)
-
-### Caroline
-
-![](./personas/persona-caroline.png)
-
-## Charles
-
-![](./personas/persona-charles.png)
-
 ### Jake
 
-![](./personas/persona-jake.png)
+![](./planning/persona-jake.png)
 
-### Peter
+## Planning
 
-![](./personas/persona-peter.png)
+### Wireframe
+
+![](./planning/wireframe-holiday-road.pdf)
+
+### Dependency Graph
+
+![](./planning/dependency-graph-holiday-road.pdf)
