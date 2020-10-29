@@ -1,9 +1,10 @@
 const eventHub = document.querySelector(".container")
-
+const contentTarget = document.querySelector(".parkContainer")
 
 
 export const ParkPlaceholderHTML = () => {
-    return `
+   contentTarget.innerHTML = `
+    
         <h3>National Park:</h3>
         <img src="" alt="image will go here">
         `
@@ -27,6 +28,7 @@ eventHub.addEventListener("click", event => {
                 parkId: id
             }
         })
+        console.log("click" , event)
         eventHub.dispatchEvent(customEvent)
     }
 })
