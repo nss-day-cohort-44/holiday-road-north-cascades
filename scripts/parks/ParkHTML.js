@@ -28,6 +28,7 @@ eventHub.addEventListener("click", event => {
                 parkId: id
             }
         })
+        console.log("click" , event)
         eventHub.dispatchEvent(customEvent)
     }
 })
