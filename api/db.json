@@ -1,3 +1,16 @@
 {
-	"itineraries": []
+	"itineraries": [ 
+		{
+		"id": 1,
+		"parkName": "Centennial Park",
+		"eateryName":"Boltons Hot Chicken",
+		"attractionName": "Country Music Hall of Fame"
+		},
+		{
+		"id": 2,
+		"parkName": "Centennial Park",
+		"eateryName":"Princes Hot Chicken",
+		"attractionName": "Country Music Hall of Fame"
+		}
+]
 }

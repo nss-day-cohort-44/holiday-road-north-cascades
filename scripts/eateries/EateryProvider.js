@@ -15,7 +15,7 @@ export const getEateries = () => {
     .then(
         parsedEateries => {
             eateries = parsedEateries
-            console.log("API check" , eateries)
+            // console.log("API check" , eateries)
         }
         )
 }

@@ -10,7 +10,7 @@ const dispatchStateChangeEvent = () => {
 let itineraries = ""
 
 export const useItineraries = () => {
-    return itinerary.slice()
+    return itineraries.slice()
 }
 
 export const getItineraries = () => {
