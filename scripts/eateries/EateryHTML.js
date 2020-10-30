@@ -5,7 +5,7 @@ const contentTarget = document.querySelector(".eateryContainer")
 export const eateryPlaceholderHTML = () => {
    contentTarget.innerHTML = `
     
-        <h3>National eatery:</h3>
+        <h3>National Eatery:</h3>
         <img src="" alt="image will go here">
         `
 }
