@@ -1,4 +1,4 @@
-import { useEateries } from "./eateryProvider.js"
+import { useEateries } from "./EateryProvider.js"
 
 const eventHub = document.querySelector(".container")
 
@@ -6,7 +6,7 @@ eventHub.addEventListener("eateryDetailClicked", (event) => {
     const arrayOfEateries = useEateries()
 
     const foundEatery = arrayOfEateries.find((eateryObj) => {
-        return eateryObj.id === (parseInt(event.detail.eateryId))
+        return eateryObj.id === parseInt(event.detail.eateryId)
         
     })
     console.log("hey we found an eatery", foundEatery)

@@ -15,7 +15,7 @@ export const getAttractions = () => {
     .then(
         parsedAttractions => {
             attractions = parsedAttractions
-            console.log("API check" , attractions)
+            // console.log("API check" , attractions)
         }
         )
 }
