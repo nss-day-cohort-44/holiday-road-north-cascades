@@ -14,9 +14,9 @@ eventHub.addEventListener("change", event => {
         const customEvent = new CustomEvent("eateryChosen", {
             detail: {
                 eateryThatWasChosen: (event.target.value)
-                //console.log("eatery that was chosen:", eatery)
             }
         })
+        console.log("eatery that was chosen:", event.target.value)
         //dispatch to event hub
         eventHub.dispatchEvent(customEvent)
     }
