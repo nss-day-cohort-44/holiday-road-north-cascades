@@ -15,7 +15,7 @@ eventHub.addEventListener("eateryChosen", event => {
 
         const eaterySelected = eateriesCollection.find(eateryObj => {
             
-            return eateryObj.id === event.detail.eateryThatWasChosen
+            return eateryObj.id === parseInt(event.detail.eateryThatWasChosen)
         })
         // console.log("Park Event" , parkSelected)
         render(eaterySelected)
