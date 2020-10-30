@@ -184,7 +184,7 @@ https://graphhopper.com/api/1/route?point=starting_latitude,starting_longitude&p
 
 ### Wireframe
 
-![](./planning/wireframe-holiday-road.pdf)
+![](./planning/Wireframe-Holiday-Road.pdf)
 
 ### Dependency Graph
 
