@@ -6,10 +6,10 @@ eventHub.addEventListener("attractionDetailClicked", (event) => {
     const arrayOfAttractions = useAttractions()
 
     const foundAttraction = arrayOfAttractions.find((attractionObj) => {
-        return attractionObj.id === (event.detail.attractionId)
+        return attractionObj.id === (parseInt(event.detail.attractionId))
         
     })
-    console.log("hey we found a attraction", foundAttraction)
+    console.log("hey we found an attraction", foundAttraction)
     render(foundAttraction)
 })
 

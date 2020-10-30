@@ -14,10 +14,8 @@ export const getAttractions = () => {
     .then(response => response.json())
     .then(
         parsedAttractions => {
-            // console.log(parsedParks)
             attractions = parsedAttractions
+            console.log("API check" , attractions)
         }
-    )
+        )
 }
-
-console.log("API check" , attractions)

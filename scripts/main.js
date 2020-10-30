@@ -19,4 +19,6 @@ import "./eateries/EateryDetail.js"
 ParkSelect()
 ParkPlaceholderHTML()
 AttractionSelect()
+AttractionPlaceholderHTML()
 EaterySelect()
+EateryPlaceholderHTML()
