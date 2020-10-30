@@ -13,6 +13,7 @@ import "./attractions/AttractionList.js"
 import "./attractions/AttractionDetail.js"
 import "./eateries/EateryList.js"
 import "./eateries/EateryDetail.js"
+import { ItinerariesList } from "./itinerary/ItineraryList.js"
 
 
 
@@ -22,3 +23,5 @@ AttractionSelect()
 AttractionPlaceholderHTML()
 EaterySelect()
 EateryPlaceholderHTML()
+
+ItinerariesList()
