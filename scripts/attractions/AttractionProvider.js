@@ -3,7 +3,7 @@
 let attractions = []
 
 export const useAttractions = () => {
-    return parks.slice()
+    return attractions.slice()
 }
 
 
