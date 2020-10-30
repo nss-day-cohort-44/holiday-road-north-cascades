@@ -10,7 +10,7 @@ eventHub.addEventListener("attractionChosen", event => {
         const attractionsCollection = useAttractions()
         //find the attraction chosen
         const attractionSelected = attractionsCollection.find(attractionObj => {
-            return attractionObj.id === event.detail.attractionThatWasChosen
+            return attractionObj.id === parseInt(event.detail.attractionThatWasChosen)
         })
         //invoke render and pass in chosen attraction
         render(attractionSelected)
