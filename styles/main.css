@@ -71,3 +71,14 @@ main {
 	padding: 10px 5px;
 	margin 5px;
 }
+
+.preview--image {
+	width: 275px;
+	height: 175px;
+}
+
+.selectedItemsContainer {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}

@@ -6,7 +6,7 @@ export const EateryPlaceholderHTML = () => {
    contentTarget.innerHTML = `
     
         <h3>Eatery:</h3>
-        <img src="" alt="image will go here">
+        <img class="preview--image" src="../images/building-2602449_960_720_pixabay.jpg" alt="motorcycle in front of an old diner">
         `
 }
 
