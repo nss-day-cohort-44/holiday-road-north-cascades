@@ -48,6 +48,7 @@ main {
 
 .itineraryContainer {
 	flex: 1;
+	margin: 10px;
 }
 
 .container {
@@ -61,4 +62,9 @@ main {
 
 .footer {
 	flex-shrink: 0;
+}
+
+.itineraryCard {
+	padding: 10px 5px;
+	margin 5px;
 }
