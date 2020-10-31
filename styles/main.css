@@ -36,6 +36,9 @@ h1,h2,h3,h4,h5,h6 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	/* background-color: #4c8055; */
+	padding: 15px;
+	margin: 10px 0;
 }
 
 main {
