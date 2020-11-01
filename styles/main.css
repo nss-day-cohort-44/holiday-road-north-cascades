@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #logo {
-	width: 400px;
+	width: 375px;
 }
 
 .filters {
@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: space-around;
 	/* background-color: #4c8055; */
 	padding: 15px;
-	margin: 10px 0;
+	margin: 15px 0;
 }
 
 main {
