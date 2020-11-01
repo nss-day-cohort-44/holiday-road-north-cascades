@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 /*Typography
 --------------------------------------------------------------*/
@@ -12,14 +14,14 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
 	background-color: #fbf1e3;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
 }
 
@@ -29,7 +31,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #logo {
-	width: 375px;
+	width: 325px;
 }
 
 .filters {
@@ -81,4 +83,9 @@ main {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+}
+
+.parkContainer, .attractionContainer, .eateryContainer {
+	flex: 1;
+	margin: 25px;
 }
