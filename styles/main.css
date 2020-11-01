@@ -71,7 +71,8 @@ main {
 
 .itineraryCard {
 	padding: 10px 5px;
-	margin 5px;
+	margin: 5px;
+	border: 1px dotted gray;
 }
 
 .preview--image {
@@ -87,5 +88,17 @@ main {
 
 .parkContainer, .attractionContainer, .eateryContainer {
 	flex: 1;
-	margin: 25px;
+	margin: 15px;
+	padding: 15px;
+	border: 1px dotted gray;
+}
+
+button {
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+.weatherContainer {
+	border: 1px dotted gray;
+	height: 400px;
 }
