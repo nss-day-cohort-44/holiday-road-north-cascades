@@ -18,7 +18,7 @@ export const getItineraries = () => {
         .then(response => response.json())
         
         .then(parsedItinerary => {
-            console.log("parsed" , parsedItinerary)
+            // console.log("parsed" , parsedItinerary)
             itineraries = parsedItinerary
         })
         
