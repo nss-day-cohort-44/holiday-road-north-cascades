@@ -17,6 +17,12 @@
       "attractionName": "World’s Largest ‘Gone With the Wind’ Collection",
       "eateryName": "El Charro Cafe",
       "id": 3
+    },
+    {
+      "parkName": "Ala Kahakai National Historic Trail",
+      "attractionName": "Elvis Memorial Chapel",
+      "eateryName": "Deer Park Tavern",
+      "id": 4
     }
   ]
 }
