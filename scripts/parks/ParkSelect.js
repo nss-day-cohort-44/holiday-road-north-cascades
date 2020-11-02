@@ -6,7 +6,7 @@ const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("change", event => {
     if (event.target.id === "parkSelect") {
-        console.log("park chosen change:", event)
+        // console.log("park chosen change:", event)
         const customEvent = new CustomEvent("parkChosen", {
             detail: {
                 //Not sure if we need parseInt here since ID doesn't appear to be an integer         

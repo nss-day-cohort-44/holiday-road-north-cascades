@@ -12,7 +12,7 @@ eventHub.addEventListener("eateryChosen", event => {
 
     if(event.detail.eateryThatWasChosen !==0) {
         const eateriesCollection = useEateries()
-        console.log(eateriesCollection)
+        // console.log(eateriesCollection)
 
         const eaterySelected = eateriesCollection.find(eateryObj => {
             

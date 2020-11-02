@@ -14,6 +14,7 @@ import "./attractions/AttractionDetail.js"
 import "./eateries/EateryList.js"
 import "./eateries/EateryDetail.js"
 import { ItinerariesList } from "./itinerary/ItineraryList.js"
+import { renderSaveItineraryButton } from "./itinerary/ItineraryForm.js"
 
 
 
@@ -25,3 +26,5 @@ EaterySelect()
 EateryPlaceholderHTML()
 
 ItinerariesList()
+
+renderSaveItineraryButton()

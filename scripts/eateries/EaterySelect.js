@@ -9,14 +9,14 @@ const eventHub = document.querySelector(".container")
 eventHub.addEventListener("change", event => {
     //only do this if 'eaterySelect' element was changed
     if (event.target.id === "eaterySelect") {
-        console.log("eatery chosen change:", event)
+        // console.log("eatery chosen change:", event)
         //create and name custom event
         const customEvent = new CustomEvent("eateryChosen", {
             detail: {
                 eateryThatWasChosen: (event.target.value)
             }
         })
-        console.log("eatery that was chosen:", event.target.value)
+        // console.log("eatery that was chosen:", event.target.value)
         //dispatch to event hub
         eventHub.dispatchEvent(customEvent)
     }
