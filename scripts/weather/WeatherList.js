@@ -20,12 +20,16 @@ eventHub.addEventListener("parkChosen", event => {
         .then(() => {
             const forecast = useWeather()
             console.log(forecast)
+            render(forecast)
         }) 
     }
 })
 
 const render = (forecastArray)=> {
     let forecastHTMLRepresentations = ""
+    for(const weather of forecastArray) {
+        forecastHTMLRepresentations += Weather(weather)
+    }
     contentContainer.innerHTML = `
         ${forecastHTMLRepresentations}
     `
