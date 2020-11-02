@@ -15,10 +15,13 @@ import "./eateries/EateryList.js"
 import "./eateries/EateryDetail.js"
 import { ItinerariesList } from "./itinerary/ItineraryList.js"
 import { renderSaveItineraryButton } from "./itinerary/ItineraryForm.js"
-// import { getWeather } from "./weather/WeatherProvider.js"
+import { Weather } from "./weather/WeatherHTML.js"
+import { getWeather } from "./weather/WeatherProvider.js"
 
 
-// getWeather(37203)
+// getWeather(37206)
+// .then(() => weather=useWeather())
+// .then
 
 ParkSelect()
 ParkPlaceholderHTML()
@@ -30,3 +33,5 @@ EateryPlaceholderHTML()
 ItinerariesList()
 
 renderSaveItineraryButton()
+Weather()
+
