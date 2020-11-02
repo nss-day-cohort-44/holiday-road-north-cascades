@@ -12,9 +12,21 @@ eventHub.addEventListener("parkChosen", event => {
             return parkObj.id === event.detail.parkThatWasChosen
         }
         )
-        const zip = parkSelected.addresses[0].postalCode
+        const lat = parkSelected.latitude
+        const lon = parkSelected.longitude
         // render(parkSelected)
-        // console.log("zip found:", zip)
-        getWeather(zip)
+        console.log("latlon found:", lat, lon)
+        getWeather(lat, lon)
+        .then(() => {
+            const forecast = useWeather()
+            console.log(forecast)
+        }) 
     }
 })
+
+const render = (forecastArray)=> {
+    let forecastHTMLRepresentations = ""
+    contentContainer.innerHTML = `
+        ${forecastHTMLRepresentations}
+    `
+}

@@ -4,19 +4,19 @@ import apiKeys from "../Settings.js"
 let weather = []
 
 export const useWeather = () => {
-    return weather.slice()
+    return weather.slice(0, 5)
 }
 
 
 // console.log("API Key Check:", apiKeys)
 
-export const getWeather = (postalCode) => {
-    return fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${postalCode}&units=imperial&appid=${apiKeys.weatherKey}`)
+export const getWeather = (lat, lon) => {
+    return fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=current,minutely,hourly,alerts&units=imperial&appid=${apiKeys.weatherKey}`)
     .then(response => response.json())
     .then(
         parsedWeather => {
-            weather = parsedWeather.list
-            // console.log("Weather Check:", weather)
+            weather = parsedWeather.daily
+            console.log("Weather Check:", weather)
         }
     )
 }
