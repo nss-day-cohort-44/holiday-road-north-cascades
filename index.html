@@ -7,29 +7,34 @@
     </head>
 
     <body class="container">
-        <header>
-            <div class="banner"></div>
-            <div class="filters">
-                <div class="filter filters__park"></div>
-                <div class="filter filters__attraction"></div>
-                <div class="filter filters__eatery"></div>
-            </div>  
+        <div class="content"> 
+            <header>
+                <div class="banner"></div>
+                    <div class="logoContainer">
+                        <img id="logo" src="./images/logo-north-cascades-h300px.png" alt="North Cascades Geocaching Adventures logo">
+                    </div>
+                <div class="filters">
+                    <div class="filter filters__park"></div>
+                    <div class="filter filters__attraction"></div>
+                    <div class="filter filters__eatery"></div>
+                </div>  
+                    
+            </header>
+            <main>
                 
-        </header>
-        <main>
-            
-            <div class="previewContainer">
-                <div class="selectedItemsContainer">
-                    <div class="parkContainer"></div>
-                    <div class="attractionContainer"></div>
-                    <div class="eateryContainer"></div>
-                    <div class="button itinerary__button"></div>
+                <div class="previewContainer">
+                    <div class="selectedItemsContainer">
+                        <div class="parkContainer"></div>
+                        <div class="attractionContainer"></div>
+                        <div class="eateryContainer"></div>
+                        <div class="button itinerary__button"></div>
+                    </div>
+                    <div class="weatherContainer">This is the weather container</div>
                 </div>
-                <div class="weatherContainer"></div>
-            </div>
-            <article class="itineraryContainer"></article>
-        </main>
-        <footer>Copyright North Cascades 2020</footer>
+                <article class="itineraryContainer"></article>
+            </main>
+        </div>
+        <footer class="footer">&#169; North Cascades 2020</footer>
         <script type="module" src="./scripts/main.js"></script>
     </body>
 </html>

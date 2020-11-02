@@ -6,7 +6,7 @@ export const ParkPlaceholderHTML = () => {
    contentTarget.innerHTML = `
     
         <h3>National Park:</h3>
-        <img src="" alt="image will go here">
+        <img class="preview--image" src="../images/redwood-national-park-1587301_960_720_pixabay.jpg" alt="a road in Redwood National Park">
         `
 }
 

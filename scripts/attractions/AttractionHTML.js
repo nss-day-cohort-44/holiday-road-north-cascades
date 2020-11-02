@@ -6,7 +6,7 @@ export const AttractionPlaceholderHTML = () => {
    contentTarget.innerHTML = `
     
         <h3>Attraction:</h3>
-        <img src="" alt="image will go here">
+        <img class="preview--image" src="../images/t-rex-3488531__340_pixabay.jpg" alt="large statue of a t-rex">
         `
 }
 

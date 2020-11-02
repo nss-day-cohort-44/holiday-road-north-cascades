@@ -1,19 +1,104 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 
 /*Typography
 --------------------------------------------------------------*/
+html, body {
+	height: 100%;
+}
+
 body,
 button,
 input,
 select,
 textarea {
 	color: #404040;
-	font-family: "Comfortaa", Arial, sans-serif;
+	font-family: 'Open Sans', Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
+	background-color: #fbf1e3;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Patua One", serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
+}
+
+.logoContainer {
+	display: flex;
+	justify-content: center;
+}
+
+#logo {
+	width: 325px;
+}
+
+.filters {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	/* background-color: #4c8055; */
+	padding: 15px;
+	margin: 15px 0;
+}
+
+main {
+	display: flex;
+}
+
+.previewContainer {
+	flex: 3;
+}
+
+.itineraryContainer {
+	flex: 1;
+	margin: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
+}
+
+.itineraryCard {
+	padding: 10px 5px;
+	margin: 5px;
+	border: 1px dotted gray;
+}
+
+.preview--image {
+	width: 275px;
+	height: 175px;
+}
+
+.selectedItemsContainer {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.parkContainer, .attractionContainer, .eateryContainer {
+	flex: 1;
+	margin: 15px;
+	padding: 15px;
+	border: 1px dotted gray;
+}
+
+button {
+	border-radius: 4px;
+	margin: 15px 0;
+}
+
+.weatherContainer {
+	border: 1px dotted gray;
+	height: 400px;
 }
