@@ -17,7 +17,7 @@ eventHub.addEventListener("parkChosen", event => {
             
             return parkObj.id === event.detail.parkThatWasChosen
         })
-        // console.log("Park Event" , parkSelected)
+        console.log("Park Event" , parkSelected)
         render(parkSelected)
     }
 })
