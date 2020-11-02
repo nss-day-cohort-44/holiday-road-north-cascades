@@ -15,8 +15,10 @@ import "./eateries/EateryList.js"
 import "./eateries/EateryDetail.js"
 import { ItinerariesList } from "./itinerary/ItineraryList.js"
 import { renderSaveItineraryButton } from "./itinerary/ItineraryForm.js"
+// import { getWeather } from "./weather/WeatherProvider.js"
 
 
+// getWeather(37203)
 
 ParkSelect()
 ParkPlaceholderHTML()
