@@ -8,17 +8,17 @@ export const useWeather = () => {
 }
 
 
-console.log("API Key Check:", apiKeys)
+// console.log("API Key Check:", apiKeys)
 
-export const getWeather = () => {
-    return fetch(`api.openweathermap.org/data/2.5/forecast?zip=${postalCode}&appid=${apiKeys.weatherKey}`)
+export const getWeather = (postalCode) => {
+    return fetch(`https://api.openweathermap.org/data/2.5/forecast?zip=${postalCode}&units=imperial&appid=${apiKeys.weatherKey}`)
     .then(response => response.json())
     .then(
         parsedWeather => {
-            console.log("Parsed Weather Check:", parsedWeather)
-            weather = parsedWeather.data
+            weather = parsedWeather.list
+            // console.log("Weather Check:", weather)
         }
     )
 }
-console.log("Weather Array Check:", weather)
+// console.log("Weather Type Check:", weather)
 
