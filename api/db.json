@@ -1,16 +1,22 @@
 {
-	"itineraries": [ 
-		{
-		"id": 1,
-		"parkName": "Centennial Park",
-		"eateryName":"Boltons Hot Chicken",
-		"attractionName": "Country Music Hall of Fame"
-		},
-		{
-		"id": 2,
-		"parkName": "Centennial Park",
-		"eateryName":"Princes Hot Chicken",
-		"attractionName": "Country Music Hall of Fame"
-		}
-]
+  "itineraries": [
+    {
+      "id": 1,
+      "parkName": "Centennial Park",
+      "eateryName": "Boltons Hot Chicken",
+      "attractionName": "Country Music Hall of Fame"
+    },
+    {
+      "id": 2,
+      "parkName": "Centennial Park",
+      "eateryName": "Princes Hot Chicken",
+      "attractionName": "Country Music Hall of Fame"
+    },
+    {
+      "parkName": "African American Civil War Memorial",
+      "attractionName": "World’s Largest ‘Gone With the Wind’ Collection",
+      "eateryName": "El Charro Cafe",
+      "id": 3
+    }
+  ]
 }

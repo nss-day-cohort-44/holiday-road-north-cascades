@@ -18,7 +18,7 @@ export const ItinerariesList = () => {
         const itinerariesArray = useItineraries()
         render(itinerariesArray)
         
-        console.log("itineraryArray" , itinerariesArray)
+        // console.log("itineraryArray" , itinerariesArray)
 
     })
 }
