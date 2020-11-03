@@ -2,8 +2,10 @@ export const Weather = (weatherObj) => {
     return `
         <div class="weatherCard">
            
-            <h3>Low: ${weatherObj.temp.min}</h3>
-            <h3>High: ${weatherObj.temp.max}</h3>
+        <h3>Date: ${new Date(weatherObj.dt).toLocaleDateString('en-US')}</h3>
+            <h5>Low: ${weatherObj.temp.min}</h5>
+            <h5>High: ${weatherObj.temp.max}</h5>
+
            
                 
         </div>`

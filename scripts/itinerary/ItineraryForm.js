@@ -5,63 +5,63 @@ import { saveItinerary } from "./ItineraryProvider.js"
 const contentTarget = document.querySelector(".itinerary__button")
 const eventHub = document.querySelector(".container")
 
-let chosenPark
-let chosenAttraction
-let chosenEatery
 
+let chosenPark = ""
+let chosenAttraction = ""
+let chosenEatery = ""
 
 export const renderSaveItineraryButton = () => {
-    contentTarget.innerHTML = `
-
-        <button id="saveItinerary">Itinerary Button</button>
-        
+    return contentTarget.innerHTML = `
+    <button id="saveItinerary" disabled>Save Itinerary</button>
     `
 }
 
+
 eventHub.addEventListener("click", event => {
-    if (event.target.id === "saveItinerary"){
-
-        const newItineraryObject = {
-           parkName: chosenPark.parkName,
-            attractionName: chosenAttraction.attractionName,
-           eateryName: chosenEatery.eateryName,
+    if (event.target.id === "saveItinerary") {
+        console.log("heard save itin click")
+        
+            const newItineraryObject = {
+                parkName: chosenPark.parkName,
+                attractionName: chosenAttraction.attractionName,
+                eateryName: chosenEatery.eateryName
+            }
+            saveItinerary(newItineraryObject)
         }
-        saveItinerary(newItineraryObject)
+    })
+
+const checkSaveStatus = () => {
+    const saveButton = document.querySelector("#saveItinerary")
+console.log("save button", saveButton)
+    if (chosenPark === "" || chosenAttraction === "" || chosenEatery === "") {
+        saveButton.disabled = true
     }
-})
-
-
-
-
-
-
-
-
-
-
-
-
+    else {
+        saveButton.disabled = false
+}
+}
 
 // PARK LISTENER
 eventHub.addEventListener("parkChosen", event => {
 
-    if(event.detail.parkThatWasChosen !== 0) {
+    if (event.detail.parkThatWasChosen !== 0) {
         const parksCollection = useParks()
 
         const parkSelected = parksCollection.find(parkObj => {
-            
+
             return parkObj.id === event.detail.parkThatWasChosen
         })
         // console.log("Park Event" , parkSelected)
         chosenPark = {
             parkName: `${parkSelected.fullName}`
         }
+        checkSaveStatus()
         console.log("stored chosenPark:", chosenPark)
     }
 })
 
 eventHub.addEventListener("attractionChosen", event => {
-    if(event.detail.attractionThatWasChosen !==0) {
+    if (event.detail.attractionThatWasChosen !== 0) {
         const attractionsCollection = useAttractions()
         //find the attraction chosen
         const attractionSelected = attractionsCollection.find(attractionObj => {
@@ -70,23 +70,25 @@ eventHub.addEventListener("attractionChosen", event => {
         chosenAttraction = {
             attractionName: `${attractionSelected.name}`
         }
+        checkSaveStatus()
         console.log("stored chosenAttraction:", chosenAttraction);
     }
 })
 
 eventHub.addEventListener("eateryChosen", event => {
 
-    if(event.detail.eateryThatWasChosen !==0) {
+    if (event.detail.eateryThatWasChosen !== 0) {
         const eateriesCollection = useEateries()
         // console.log(eateriesCollection)
 
         const eaterySelected = eateriesCollection.find(eateryObj => {
-            
+
             return eateryObj.id === parseInt(event.detail.eateryThatWasChosen)
         })
         chosenEatery = {
             eateryName: `${eaterySelected.businessName}`
         }
+        checkSaveStatus()
         console.log("stored chosenEatery:", chosenEatery);
     }
 })
