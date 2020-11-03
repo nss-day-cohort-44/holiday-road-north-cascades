@@ -1,3 +1,4 @@
+// CALLED BY RENDER ON WEATHERLIST.JS -- CREATES AN HTML REPRESENTATION OF EACH FORECAST OBJ PASSED TO IT
 export const Weather = (weatherObj) => {
     return `
         <div class="weatherCard">

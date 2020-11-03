@@ -4,6 +4,8 @@ const ContentTarget = document.querySelector(".filters__park")
 const eventHub = document.querySelector(".container")
 // console.log("eventHub:", eventHub)
 
+// LISTENS FOR A PARK TO BE SELECTED FROM DROPDOWN, THEN DISPATCHES CUSTOM EVENT
+// LISTENED FOR BY PARKLIST.JS, WEATHERLIST.JS AND ITINERARYFORM.JS
 eventHub.addEventListener("change", event => {
     if (event.target.id === "parkSelect") {
         // console.log("park chosen change:", event)
@@ -17,7 +19,7 @@ eventHub.addEventListener("change", event => {
         eventHub.dispatchEvent(customEvent)
     }
 })
-
+// CALLED ON MAIN.JS - GETS PARKS DATA, MAKE A USABLE ARRAY AND CALL THE RENDER FUNCTION USING THAT DATA, WHICH CREATES DROPDOWN ON THE DOM
 export const ParkSelect = () => {
     getParks()
         .then(() => {
@@ -27,7 +29,7 @@ export const ParkSelect = () => {
         }
         )
 }
-
+// TAKES PARK INFORMATION AND CREATES HTML REPRESENTATIONS FOR PARK DROPDOWN MENU
 const render = parksCollection => {
     ContentTarget.innerHTML = `
     <select class="dropdown" id="parkSelect">

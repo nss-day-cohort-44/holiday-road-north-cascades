@@ -1,7 +1,7 @@
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".parkContainer")
 
-
+// CALLED ON MAIN.JS AND USED TO RENDER PARK PLACEHOLDER TEXT IN ITINERARY PREVIEW SECTION
 export const ParkPlaceholderHTML = () => {
    contentTarget.innerHTML = `
     
@@ -9,7 +9,7 @@ export const ParkPlaceholderHTML = () => {
         <img class="preview--image" src="../images/redwood-national-park-1587301_960_720_pixabay.jpg" alt="a road in Redwood National Park">
         `
 }
-
+// CALLED BY RENDER FUNCTION ON PARKLIST.JS AND USED TO CREATE HTML REPRESENTATION OF CHOSEN PARK, WHICH REPLACES PLACEHOLDER HTML
 export const ChosenParkHTML = (parkObj) => {
     return  `
         <div id="park-${parkObj.id}" class="card">
@@ -20,7 +20,7 @@ export const ChosenParkHTML = (parkObj) => {
         </div>
         `
 }
-
+// LISTENS FOR DETAIL BUTTON CLICK AND DISPATCHES A CUSTOM EVENT WITH DETAIL INFORMATION, WHICH IS LISTENED FOR BY PARKDETAIL.JS
 eventHub.addEventListener("click", event => {
     const [prefix, id] = event.target.id.split("--")
     if (prefix === "parkDetail") {
