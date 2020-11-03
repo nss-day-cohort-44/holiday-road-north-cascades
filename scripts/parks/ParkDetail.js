@@ -9,16 +9,14 @@ eventHub.addEventListener("parkDetailClicked", (event) => {
         return parkObj.id === (event.detail.parkId)
         
     })
-    console.log("hey we found a park", foundPark)
+    // console.log("hey we found a park", foundPark)
     render(foundPark)
 })
 
 const render = (parkObj) => {
-    const contentTarget = document.querySelector(".parkContainer")
+    const contentTarget = document.querySelector(".park__detail")
 
-    contentTarget.innerHTML += `
-    <div class="description">
+    contentTarget.innerHTML = `
         ${parkObj.description}
-        </div>
     `
 }
