@@ -16,6 +16,7 @@ export const ChosenParkHTML = (parkObj) => {
             <h3>National Park:</h3>
             <h3 class="park__name">${parkObj.fullName}</h3>
             <button id="parkDetail--${parkObj.id}">More Info</button>
+            <div class="park__detail description"></div>
         </div>
         `
 }

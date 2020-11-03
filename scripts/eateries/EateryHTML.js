@@ -16,6 +16,7 @@ export const ChosenEateryHTML = (eateryObj) => {
             <h3>Eatery:</h3>
             <h3 class="eatery__name">${eateryObj.businessName}</h3>
             <button id="eateryDetail--${eateryObj.id}">More Info</button>
+            <div class="eatery__detail description"></div>
         </div>
         `
 }
