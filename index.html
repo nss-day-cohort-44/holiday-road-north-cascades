@@ -1,40 +1,45 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Holiday Road</title>
-        <link rel="stylesheet" href="./styles/main.css">
-    </head>
 
-    <body class="container">
-        <div class="content"> 
-            <header>
-                <div class="banner"></div>
-                    <div class="logoContainer">
-                        <img id="logo" src="./images/logo-north-cascades-h300px.png" alt="North Cascades Geocaching Adventures logo">
-                    </div>
-                <div class="filters">
-                    <div class="filter filters__park"></div>
-                    <div class="filter filters__attraction"></div>
-                    <div class="filter filters__eatery"></div>
-                </div>  
-                    
-            </header>
-            <main>
-                
-                <div class="previewContainer">
-                    <div class="selectedItemsContainer">
+<head>
+    <meta charset="utf-8">
+    <title>Holiday Road</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body class="container">
+    <div class="content">
+        <header>
+            <div class="banner"></div>
+            <div class="logoContainer">
+                <img id="logo" src="./images/logo-north-cascades-h300px.png"
+                    alt="North Cascades Geocaching Adventures logo">
+            </div>
+            <div class="filters">
+                <div class="filter filters__park"></div>
+                <div class="filter filters__attraction"></div>
+                <div class="filter filters__eatery"></div>
+            </div>
+
+        </header>
+        <main>
+
+            <div class="previewContainer">
+                <div class="selectedItemsContainer">
+                    <div class="itinerary__cards">
                         <div class="parkContainer"></div>
                         <div class="attractionContainer"></div>
                         <div class="eateryContainer"></div>
-                        <div class="button itinerary__button"></div>
                     </div>
-                    <div class="weatherContainer">This is the weather container</div>
+                    <div class="button itinerary__button"></div>
                 </div>
-                <article class="itineraryContainer"></article>
-            </main>
-        </div>
-        <footer class="footer">&#169; North Cascades 2020</footer>
-        <script type="module" src="./scripts/main.js"></script>
-    </body>
+                <div class="weatherContainer"></div>
+            </div>
+            <article class="itineraryContainer"></article>
+        </main>
+    </div>
+    <footer class="footer">&#169; North Cascades 2020</footer>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
 </html>
