@@ -80,11 +80,11 @@ main {
 	height: 175px;
 }
 
-.selectedItemsContainer {
+/* .selectedItemsContainer {
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
+} */
 
 .parkContainer, .attractionContainer, .eateryContainer {
 	flex: 1;
@@ -99,6 +99,13 @@ button {
 }
 
 .weatherContainer {
+	display: flex;
+	justify-content: space-around;
 	border: 1px dotted gray;
 	height: 400px;
+}
+
+.itinerary__cards {
+	display: flex;
+	justify-content: space-evenly;
 }
