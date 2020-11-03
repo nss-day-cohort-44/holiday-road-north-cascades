@@ -17,6 +17,18 @@
       "attractionName": "World’s Largest ‘Gone With the Wind’ Collection",
       "eateryName": "El Charro Cafe",
       "id": 3
+    },
+    {
+      "parkName": "Alaska Public Lands",
+      "attractionName": "White House Replica",
+      "eateryName": "Occidental Grill & Seafood",
+      "id": 4
+    },
+    {
+      "parkName": "Anacostia Park",
+      "attractionName": "First Kiss Spot of the Obamas",
+      "eateryName": "St. Elmo Steak House",
+      "id": 5
     }
   ]
 }
