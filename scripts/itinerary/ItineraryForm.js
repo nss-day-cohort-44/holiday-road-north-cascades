@@ -5,18 +5,19 @@ import { saveItinerary } from "./ItineraryProvider.js"
 const contentTarget = document.querySelector(".itinerary__button")
 const eventHub = document.querySelector(".container")
 
-
+// DEFINING EMPTY STRINGS TO HOLD INFO SENT FROM DROPDOWN SELECT/CHANGE EVENTS
 let chosenPark = ""
 let chosenAttraction = ""
 let chosenEatery = ""
 
+// CALLED ON MAIN.JS TO RENDER SAVE ITINERARY BUTTON TO THE DOM
 export const renderSaveItineraryButton = () => {
     return contentTarget.innerHTML = `
     <button id="saveItinerary" disabled>Save Itinerary</button>
     `
 }
 
-
+// LISTENS FOR ITINERARY BUTTON CLICK, AND USES THE ASSIGNED VARIABLES TO CREATE A NEW ITINERARY OBJECT AND CALLS THE SAVEITINERARY FUNCTION WITH THE CREATED OBJECT AS ARGUMENT
 eventHub.addEventListener("click", event => {
     if (event.target.id === "saveItinerary") {
         console.log("heard save itin click")
@@ -29,7 +30,7 @@ eventHub.addEventListener("click", event => {
             saveItinerary(newItineraryObject)
         }
     })
-
+// CALLED IN EACH OF THE BELOW EVENT LISTENERS TO CHECK IF ALL CHANGE EVENTS HAVE OCCURED AND ENABLE SAVE ITINERARY BUTTON ONCE THEY HAVE
 const checkSaveStatus = () => {
     const saveButton = document.querySelector("#saveItinerary")
 console.log("save button", saveButton)
@@ -41,7 +42,10 @@ console.log("save button", saveButton)
 }
 }
 
-// PARK LISTENER
+/* PARK LISTENER
+LISTENS FOR THE PARKCHOSEN CUSTOM EVENT FROM PARKSELECT, 
+FINDS INFO FOR THE CHOSEN PARK, ASSIGNS A NEW PARK OBJECT AS THE VALUE OF CHOSENPARK, 
+THEN CALLS THE CHECKSAVESTATUS FUNCTION */
 eventHub.addEventListener("parkChosen", event => {
 
     if (event.detail.parkThatWasChosen !== 0) {
@@ -56,10 +60,13 @@ eventHub.addEventListener("parkChosen", event => {
             parkName: `${parkSelected.fullName}`
         }
         checkSaveStatus()
-        console.log("stored chosenPark:", chosenPark)
+        // console.log("stored chosenPark:", chosenPark)
     }
 })
-
+/* ATTRACTION LISTENER
+LISTENS FOR THE ATTRACTIONCHOSEN CUSTOM EVENT FROM ATTRACTIONSELECT, 
+FINDS INFO FOR THE CHOSEN ATTRACTION, ASSIGNS A NEW ATTRACTION OBJECT AS THE VALUE OF CHOSENATTRACTION, 
+THEN CALLS THE CHECKSAVESTATUS FUNCTION */
 eventHub.addEventListener("attractionChosen", event => {
     if (event.detail.attractionThatWasChosen !== 0) {
         const attractionsCollection = useAttractions()
@@ -74,7 +81,10 @@ eventHub.addEventListener("attractionChosen", event => {
         console.log("stored chosenAttraction:", chosenAttraction);
     }
 })
-
+/* EATERY LISTENER
+LISTENS FOR THE EATERYCHOSEN CUSTOM EVENT FROM EATERYSELECT, 
+FINDS INFO FOR THE CHOSEN EATERY, ASSIGNS A NEW EATERY OBJECT AS THE VALUE OF CHOSENEATERY, 
+THEN CALLS THE CHECKSAVESTATUS FUNCTION */
 eventHub.addEventListener("eateryChosen", event => {
 
     if (event.detail.eateryThatWasChosen !== 0) {

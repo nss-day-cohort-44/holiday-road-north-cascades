@@ -24,16 +24,16 @@ h1,h2,h3,h4,h5,h6 {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
 }
-
+/* CENTERS LOGO */
 .logoContainer {
 	display: flex;
 	justify-content: center;
 }
-
+/* SIZES LOGO */
 #logo {
 	width: 325px;
 }
-
+/* LINES UP THE FILTERS IN A ROW, SPACES THEM OUT AND GIVES THEM SOME NEGATIVE SPACE FOR READABILITY */
 .filters {
 	display: flex;
 	flex-wrap: wrap;
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6 {
 	padding: 15px;
 	margin: 15px 0;
 }
-
+/* FLEXES THE PREVIEW CONTAINER AND ITINERARY CONTAINER INSIDE THE MAIN CONTAINER */
 main {
 	display: flex;
 }

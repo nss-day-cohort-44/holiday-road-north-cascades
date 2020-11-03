@@ -1,3 +1,4 @@
+// CALLED BY RENDER ON ITINERARYLIST.JS -- CREATES AN HTML REPRESENTATION OF EACH ITINERARY OBJ PASSED TO IT
 export const Itinerary = (itineraryObj) => {
     return `
         <div class="itineraryCard">

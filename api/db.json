@@ -29,6 +29,24 @@
       "attractionName": "First Kiss Spot of the Obamas",
       "eateryName": "St. Elmo Steak House",
       "id": 5
+    },
+    {
+      "parkName": "Alcatraz Island",
+      "attractionName": "Elvis Memorial Chapel",
+      "eateryName": "Club Paris",
+      "id": 6
+    },
+    {
+      "parkName": "Apostle Islands National Lakeshore",
+      "attractionName": "World’s Largest Egg",
+      "eateryName": "Hy's Steak House",
+      "id": 7
+    },
+    {
+      "parkName": "Abraham Lincoln Birthplace National Historical Park",
+      "attractionName": "Largest Fork in the US",
+      "eateryName": "Mayflower Cafe",
+      "id": 8
     }
   ]
 }
