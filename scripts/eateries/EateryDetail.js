@@ -9,16 +9,14 @@ eventHub.addEventListener("eateryDetailClicked", (event) => {
         return eateryObj.id === parseInt(event.detail.eateryId)
         
     })
-    console.log("hey we found an eatery", foundEatery)
+    // console.log("hey we found an eatery", foundEatery)
     render(foundEatery)
 })
 
 const render = (eateryObj) => {
-    const contentTarget = document.querySelector(".eateryContainer")
+    const contentTarget = document.querySelector(".eatery__detail")
 
-    contentTarget.innerHTML += `
-    <div class="description">
+    contentTarget.innerHTML = `
         ${eateryObj.description}
-        </div>
     `
 }
